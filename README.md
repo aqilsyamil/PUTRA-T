@@ -1,6 +1,6 @@
 ![PUTRA T Header](PUTRA-T-header.jpg)
 
-# PUTRA-T
+# PUTRA T
 A real-time on-campus bus tracking app
 
 # Introduction
