@@ -26,8 +26,6 @@ class MapScreen extends StatefulWidget {
   _MapScreenState createState() => _MapScreenState();
 }
 
-// enum MapType { map, satellite }
-
 class _MapScreenState extends State<MapScreen> {
   static const _initialCameraPosition = CameraPosition(
     target: LatLng(2.999806580581811, 101.71042853446261),
