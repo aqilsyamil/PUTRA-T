@@ -172,9 +172,22 @@ class _MapScreenState extends State<MapScreen> {
 
   final List<BusStop> busStopsRoute3 = [
     BusStop(
-      id: '111',
-      name: 'FRSB',
-      position: LatLng(3.003399376837077, 101.72039834803533), // Replace with the actual coordinates
+      id: 'SJ163-3',
+      name: 'SFC',
+      position: LatLng(2.9921172880176776,
+          101.71541414629283), // Replace with the actual coordinates
+    ),
+    BusStop(
+      id: 'SJ162-3',
+      name: 'KTAG',
+      position: LatLng(2.9906065922278406,
+          101.71072672072536), // Replace with the actual coordinates
+    ),
+    BusStop(
+      id: 'SJ164-3',
+      name: 'K14',
+      position: LatLng(2.9928782265949017,
+          101.71825515618721), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ144-3',
@@ -212,69 +225,7 @@ class _MapScreenState extends State<MapScreen> {
           101.70969564394254), // Replace with the actual coordinates
     ),
     BusStop(
-      id: '1111',
-      name: 'K10',
-      position: LatLng(3.0098003882950177, 101.71972624064571), // Replace with the actual coordinates
-    ),
-
-  ];
-
-  final List<BusStop> busStopsRoute4 = [
-    BusStop(
-      id: 'SJ163-4',
-      name: 'SFC',
-      position: LatLng(2.9921172880176776,
-          101.71541414629283), // Replace with the actual coordinates
-    ),
-    BusStop(
-      id: 'SJ162-4',
-      name: 'KTAG',
-      position: LatLng(2.9906065922278406,
-          101.71072672072536), // Replace with the actual coordinates
-    ),
-    BusStop(
-      id: 'SJ164-4',
-      name: 'K14',
-      position: LatLng(2.9928782265949017,
-          101.71825515618721), // Replace with the actual coordinates
-    ),
-    BusStop(
-      id: 'SJ144-4',
-      name: 'FBMK',
-      position: LatLng(2.9999843428909356,
-          101.71484887998834), // Replace with the actual coordinates
-    ),
-    BusStop(
-      id: 'SJ155-4',
-      name: 'FSKTM',
-      position: LatLng(2.9999691454681097, 101.71106029602586),
-    ),
-    BusStop(
-      id: 'SJ159-4',
-      name: 'FS',
-      position: LatLng(3.0007085010742323,
-          101.7068627631204), // Replace with the actual coordinates
-    ),
-    BusStop(
-      id: 'SJ160-4',
-      name: 'Library',
-      position: LatLng(3.0026803506513735,
-          101.70695294223508), // Replace with the actual coordinates
-    ),
-    BusStop(
-      id: 'SJ151-4',
-      name: 'FPAS',
-      position: LatLng(3.004266665826632,
-          101.70862908173052), // Replace with the actual coordinates
-    ),
-    BusStop(
-      id: 'SJ153-4',
-      name: 'Central',
-      position: LatLng(3.0012917167440483,
-          101.70969564394254), // Replace with the actual coordinates
-    ),
-    BusStop(
-      id: 'SJ824-4',
+      id: 'SJ824-3',
       name: 'KC',
       position: LatLng(2.995312111780624,
           101.70886619987638), // Replace with the actual coordinates
@@ -284,7 +235,6 @@ class _MapScreenState extends State<MapScreen> {
   Set<Marker> _route1BusStopMarkers = Set<Marker>();
   Set<Marker> _route2BusStopMarkers = Set<Marker>();
   Set<Marker> _route3BusStopMarkers = Set<Marker>();
-  Set<Marker> _route4BusStopMarkers = Set<Marker>();
 
   Set<Polyline> _polylines = Set<Polyline>();
 
@@ -445,180 +395,6 @@ class _MapScreenState extends State<MapScreen> {
   ];
 
   List<LatLng> roadCoordinatesRoute3 = [
-    // LatLng(2.991720962366472, 101.707556203837), // Starting Bus Stop 1: PFC
-    // LatLng(2.991520998102801, 101.70761314769751),
-    // LatLng(2.9907171435228257, 101.70770010942849),
-    // LatLng(2.9905446607193134, 101.70792385780781),
-    // LatLng(2.9905097365655955, 101.71045675473334),
-    // LatLng(2.9905072547116167, 101.7107351014217), // Bus Stop 2: KTAG
-    // LatLng(2.9904946736271425, 101.71096985557979),
-    // LatLng(2.99049980914963, 101.71147818767012),
-    // LatLng(2.9905916377437958, 101.71179629817112),
-    // LatLng(2.9916886165838825, 101.71288980308277),
-    // LatLng(2.9918598643144136, 101.713128386008),
-    // LatLng(2.991934319839523, 101.71339927698149),
-    // LatLng(2.991951692801737, 101.71453503098758),
-    // LatLng(2.9919914024134493, 101.71489539058041),
-    // LatLng(2.992031112022719, 101.7157875911452),
-    // LatLng(2.99204352127737, 101.71760430046506),
-    // // LatLng(2.9921172880176776, 101.71541414629283), // Bus Stop 3: SFC
-    // LatLng(2.992080749034327, 101.7177061952349),
-    // LatLng(2.99208571273516, 101.7179547190638),
-    // LatLng(2.9921973959979273, 101.71807401050168),
-    // LatLng(2.9931256075864705, 101.71846916343922),
-    // LatLng(2.996440013231157, 101.7205277417902),
-    // // LatLng(2.9928782265949017, 101.71825515618721), // Bus Stop 4: K14
-    // LatLng(2.9975672469152785, 101.72105776309851),
-    // LatLng(2.999086804119085, 101.72156207812499),
-    // LatLng(2.9997640918100563, 101.72167511427119),
-    // LatLng(3.000510844418602, 101.72162294376237),
-    // LatLng(3.0012730688401286, 101.72146487994381),
-    // LatLng(3.0011646580101887, 101.72070279068615),
-    // LatLng(3.0011863401775227, 101.72055080704506),
-    // LatLng(3.0008806215873, 101.71918078323695),
-    // LatLng(3.0008199115020484, 101.7190613675413),
-    // LatLng(3.0003410640710824, 101.71645475588676),
-    // LatLng(2.99983507902807, 101.7136022394701),
-    // LatLng(2.9999843428909356, 101.71484887998834), // Bus Stop 5: FBMK
-
-    // LatLng(),
-    // LatLng(),
-    // LatLng(),
-    LatLng(3.0093538865047247, 101.72009214034568),
-    LatLng(3.0101157734443866, 101.71930137344236),
-    LatLng(3.0100023009552275, 101.71918542521605),
-    LatLng(3.009302939624124, 101.71863583062286),
-    LatLng(3.008862943858412, 101.71838306348924),
-    LatLng(3.008388211378421, 101.71935007169816),
-    LatLng(3.0081705291049845, 101.719918218007),
-    LatLng(3.008089769046511, 101.72006386303954),
-    LatLng(3.006928410088234, 101.7197507679799),
-    LatLng(3.004157288897445, 101.71869689611795),
-    LatLng(3.0036423427403927, 101.718524564189),
-    LatLng(3.0035385499205116, 101.71849908320343),
-    LatLng(3.003490336479989, 101.71853194026376),
-    LatLng(3.0034401141438543, 101.718532610816),
-    LatLng(3.0033430176194758, 101.71891147283888),
-    LatLng(3.0032847305399, 101.71934458206985),
-    LatLng(3.0032740164397893, 101.71967315267538),
-    LatLng(3.0033302654646694, 101.7200634140858),
-    LatLng(3.0033858448581743, 101.7202625681061),
-    LatLng(3.0037012411095123, 101.72097067128477),
-    LatLng(3.003755481219468, 101.72105717252522),
-    LatLng(3.003754120727928, 101.7210610112958),
-    LatLng(3.0036940632957787, 101.72097484046687),
-    LatLng(3.003375848481385, 101.72025495499703),
-    LatLng(3.003289796010455, 101.71987257194365),
-    LatLng(3.003266490131738, 101.71966522338656),
-    LatLng(3.0032742946755655, 101.71936643441617),
-    LatLng(3.0032943059470214, 101.71912287788415),
-    LatLng(3.0033291267716424, 101.71893579380595),
-    LatLng(3.0034179462709103, 101.71857130994493),
-    LatLng(3.003331397046497, 101.71848464167597),
-    LatLng(3.0031655110138944, 101.71844672430831),
-    LatLng(3.0025722879172534, 101.71845214107508),
-    LatLng(3.0019285773840876, 101.71847200255311),
-    LatLng(3.0017771160303703, 101.7184557522527),
-    LatLng(3.001232576217443, 101.71838352869486),
-    LatLng(3.0009621093235688, 101.71838172310466),
-    LatLng(3.00084671009157, 101.7183853342825),
-    LatLng(3.0007186890600788, 101.71837269515991),
-    LatLng(3.000659186322035, 101.7182625542348),
-    LatLng(3.0003149731535643, 101.71644342325106),
-    LatLng(3.0002986887888468, 101.7161752683438),
-    LatLng(3.0000115823288986, 101.71483896409994),
-    // LatLng(),
-    LatLng(2.9997766568925877, 101.71356585827048),
-    LatLng(2.999740381636913, 101.71351396536981),
-    LatLng(2.9996889845279076, 101.71331661598855),
-    LatLng(2.9996395257454487, 101.71323151466471),
-    LatLng(2.9996333294751127, 101.71314245532906),
-    LatLng(2.9996990325952884, 101.71307062573325),
-    LatLng(2.999772467101826, 101.71305189178614),
-    // LatLng(2.9999691454681097, 101.71106029602586),   // Bus Stop 6: FSKTM
-    LatLng(3.0000203695270784, 101.71106249342165),
-    LatLng(3.0001185557941703, 101.71014185112803),
-    LatLng(3.0001542598898303, 101.7095161718703),
-    LatLng(3.000186988642652, 101.70696876370917),
-    // LatLng(3.0000203695270784, 101.71106249342165),
-    LatLng(3.0006124623528008, 101.70698664021101),
-    // LatLng(3.0007085010742323, 101.7068627631204),    // Bus Stop 7: FS
-    LatLng(3.0023530348426792, 101.70698664021144),
-    LatLng(3.0034211796681416, 101.70705516698143),
-    // LatLng(3.0026803506513735, 101.70695294223508),   // Bus Stop 8: SAS Lib
-    LatLng(3.0042334451045942, 101.70692109286725),
-    LatLng(3.004177404041656, 101.70863004951426),
-    // LatLng(3.004266665826632, 101.70862908173052),    // Bus Stop 9: FPAS
-    LatLng(3.0041870229539565, 101.7093114243268),
-    LatLng(3.004107556216379, 101.70947057651071),
-    LatLng(3.0039353782651155, 101.70959436154261),
-    LatLng(3.0036749038770028, 101.70966951674056),
-    LatLng(3.0033895382720317, 101.70967643515753),
-    LatLng(3.001899530705045, 101.70965419526968),
-    // // LatLng(3.0012917167440483, 101.70969564394254),   // Bus Stop 10: Central
-    LatLng(3.001449760030355, 101.7096414321997),
-    LatLng(3.0004268680619797, 101.70959379049657),
-    LatLng(3.0002875145695573, 101.709762093027),
-    LatLng(3.000182170743548, 101.70994083729175),
-    LatLng(3.00006147722427, 101.71151866751302),
-    LatLng(3.0000175524818973, 101.71204907516292),
-    LatLng(2.999834102062915, 101.71310471575566),
-    LatLng(2.999870275386367, 101.71315905019783),
-    LatLng(2.999867691577596, 101.71323667082955),
-    LatLng(2.999813431591846, 101.7133246408788),
-    LatLng(2.999836685871775, 101.71350316833167),
-    LatLng(2.999859940150928, 101.7136325360574),
-    LatLng(3.0002707656728695, 101.71571794369557),
-    LatLng(3.0003999560650985, 101.71632597198129),
-    LatLng(3.0004387131785815, 101.716393243197),
-    LatLng(3.000800446169597, 101.71810607180682),
-    LatLng(3.0009063822341115, 101.71819921656486),
-    LatLng(3.00101490209442, 101.7182432015895),
-    LatLng(3.0014424837976907, 101.7182708647747),
-    LatLng(3.0019739300635315, 101.71835069123985),
-    LatLng(3.0027559148132053, 101.71831267863739),
-    LatLng(3.0033554367770128, 101.71830707037152),
-
-    LatLng(3.0035017901293273, 101.71828441463371),
-    LatLng(3.0035860253112086, 101.7184489683344),
-    LatLng(3.003514218271321, 101.71855129584574),
-    LatLng(3.003449315750435, 101.71856927230043),
-
-    LatLng(3.0033666254284896, 101.71890585928146),
-    LatLng(3.003358085399534, 101.71893301840306),
-    LatLng(3.003339104722436, 101.71912122983139),
-    LatLng(3.0033110707254527, 101.71934581027307),
-    LatLng(3.00329787825603, 101.7196694703214),
-    // LatLng(3.0032861958057424, 101.71966989550229),
-    LatLng(3.0033380929212763, 101.72004934799422),
-    LatLng(3.003390813796452, 101.72024897299971),
-    LatLng(3.0036995685148744, 101.72093871939894),
-    LatLng(3.0037793517231766, 101.72107261804666),
-    LatLng(3.0037401958235037, 101.72108687614508),
-    LatLng(3.0036618840199343, 101.72096330595869),
-    LatLng(3.003356113979596, 101.72027414614973),
-    LatLng(3.003299519979326, 101.72006408420569),
-    LatLng(3.0032627001260006, 101.71987383245555),
-    LatLng(3.0032420810076075, 101.71967325696706),
-    LatLng(3.0032509177726707, 101.71933699805987),
-    LatLng(3.003268591302621, 101.71911282545206),
-    LatLng(3.003308356743932, 101.71893142262056),
-    LatLng(3.00341881629555, 101.71851109898655),
-    LatLng(3.003362850124128, 101.71846685439351),
-    LatLng(3.003362850124128, 101.71838868894578),
-    LatLng(3.0034497449679933, 101.71831642277712),
-    LatLng(3.0035867147925903, 101.71836214218995),
-    LatLng(3.0042353828617068, 101.71861969021239),
-    LatLng(3.0070334636022196, 101.71965125226217),
-    LatLng(3.008123900547188, 101.71993917463685),
-    LatLng(3.0082353849073913, 101.71960911390923),
-    LatLng(3.008354139967417, 101.71934700686113),
-    LatLng(3.0090884822131927, 101.71984209795279),
-    LatLng(3.0093538865047247, 101.72009214034568),
-
-  ];
-
-  List<LatLng> roadCoordinatesRoute4 = [
     LatLng(2.991720962366472, 101.707556203837), // Starting Bus Stop 1: PFC
     LatLng(2.991520998102801, 101.70761314769751),
     LatLng(2.9907171435228257, 101.70770010942849),
@@ -708,7 +484,7 @@ class _MapScreenState extends State<MapScreen> {
       return Marker(
         markerId: MarkerId(busStop.id),
         position: busStop.position,
-        icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueOrange),
+        icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueBlue),
         infoWindow: InfoWindow(
           title: busStop.name,
           snippet: '',
@@ -721,7 +497,7 @@ class _MapScreenState extends State<MapScreen> {
       return Marker(
         markerId: MarkerId(busStop.id),
         position: busStop.position,
-        icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueOrange),
+        icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueRed),
         infoWindow: InfoWindow(
           title: busStop.name,
           snippet: '',
@@ -729,66 +505,41 @@ class _MapScreenState extends State<MapScreen> {
       );
     }));
 
-    // Create Bus Stop markers for Route 3
     _route3BusStopMarkers.addAll(busStopsRoute3.map((busStop) {
       return Marker(
         markerId: MarkerId(busStop.id),
         position: busStop.position,
-        icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueOrange),
+        icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueGreen),
         infoWindow: InfoWindow(
           title: busStop.name,
           snippet: '',
         ),
       );
     }));
-
-    // Create Bus Stop markers for Route 4
-    _route4BusStopMarkers.addAll(busStopsRoute4.map((busStop) {
-      return Marker(
-        markerId: MarkerId(busStop.id),
-        position: busStop.position,
-        icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueOrange),
-        infoWindow: InfoWindow(
-          title: busStop.name,
-          snippet: '',
-        ),
-      );
-    }));
-
-
 
     // Initialize the polylines for Route 1 (blue).
     _polylines.add(Polyline(
       polylineId: PolylineId('route1'),
       color: Colors.blueAccent,
-      width: 6,
+      width: 7,
       points: roadCoordinatesRoute1,
     ));
 
     // Initialize the polylines for Route 2 (red).
     _polylines.add(Polyline(
       polylineId: PolylineId('route2'),
-      color: Colors.blueAccent, // Set the color to red for Route 2.
-      width: 6,
+      color: Colors.red, // Set the color to red for Route 2.
+      width: 7,
       points: roadCoordinatesRoute2, // Replace with Route 2 coordinates.
     ));
 
-    // Initialize the polylines for Route 3 (green).
+    // Initialize the polylines for Route 2 (red).
     _polylines.add(Polyline(
       polylineId: PolylineId('route3'),
-      color: Colors.blueAccent, // Set the color to red for Route 3.
-      width: 6,
-      points: roadCoordinatesRoute3, // Replace with Route 3 coordinates.
+      color: Colors.green, // Set the color to red for Route 2.
+      width: 7,
+      points: roadCoordinatesRoute3, // Replace with Route 2 coordinates.
     ));
-
-    // Initialize the polylines for Route 4 (purple).
-    _polylines.add(Polyline(
-      polylineId: PolylineId('route4'),
-      color: Colors.blueAccent, // Set the color to red for Route 4.
-      width: 6,
-      points: roadCoordinatesRoute4, // Replace with Route 4 coordinates.
-    ));
-
 
     _pages = [
       // GoogleMap(
@@ -833,39 +584,7 @@ class _MapScreenState extends State<MapScreen> {
       body: _currentIndex == 1 // Check if the Bus Routes tab is selected.
           ? Column(
               children: [
-                Expanded(
-                  child: GoogleMap(
-                    mapType: MapType.normal,
-                    myLocationButtonEnabled: false,
-                    zoomControlsEnabled: false,
-                    markers: _selectedRoute == 1
-                        ? _route1BusStopMarkers
-                        : _selectedRoute == 2
-                        ? _route2BusStopMarkers
-                        : _selectedRoute == 3
-                        ? _route3BusStopMarkers
-                        : _route4BusStopMarkers,
-
-                    polylines: _polylines.where((polyline) {
-                      // Filter and display the selected route.
-                      if (_selectedRoute == 1) {
-                        return polyline.polylineId.value == 'route1';
-                      } else if (_selectedRoute == 2) {
-                        return polyline.polylineId.value == 'route2';
-                      } else if (_selectedRoute == 3) {
-                        return polyline.polylineId.value == 'route3';
-                      } else {
-                        return polyline.polylineId.value == 'route4';
-                      }
-                    }).toSet(),
-                    initialCameraPosition: _initialCameraPosition,
-                    onMapCreated: (GoogleMapController controller) {
-                      // You can interact with the Google Map here
-                    },
-                  ),
-                ),
-
-                Column(
+                Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     ElevatedButton(
@@ -876,20 +595,10 @@ class _MapScreenState extends State<MapScreen> {
                       },
                       style: ElevatedButton.styleFrom(
                         primary:
-                            _selectedRoute == 1 ? Colors.blue : Colors.white,
-                        minimumSize: Size(400, 50), // Set the width and height for a wider button
-                        shape: RoundedRectangleBorder( // Adjust the button's shape
-                          borderRadius: BorderRadius.circular(0), // You can change the value to make it less curved
-                        ),
+                            _selectedRoute == 1 ? Colors.blue : Colors.grey,
                       ),
-                      child: Text('Line 1',
-                        style: TextStyle(
-                          color: _selectedRoute == 1 ? Colors.white : Colors.black,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
+                      child: Text('Route 1'),
                     ),
-
                     SizedBox(width: 16),
                     ElevatedButton(
                       onPressed: () {
@@ -898,22 +607,12 @@ class _MapScreenState extends State<MapScreen> {
                         });
                       },
                       style: ElevatedButton.styleFrom(
-                        primary: _selectedRoute == 2 ? Colors.red : Colors.white,
-                        minimumSize: Size(400, 50), // Set the width and height for a wider button
-                        shape: RoundedRectangleBorder( // Adjust the button's shape
-                          borderRadius: BorderRadius.circular(0), // You can change the value to make it less curved
-                        ),
+                        primary: _selectedRoute == 2 ? Colors.red : Colors.grey,
                       ),
-                      child: Text('Line 2',
-                        style: TextStyle(
-                          color: _selectedRoute == 2 ? Colors.white : Colors.black,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
+                      child: Text('Route 2'),
                     ),
                   ],
                 ),
-
                 SizedBox(width: 16),
                 ElevatedButton(
                   onPressed: () {
@@ -922,42 +621,36 @@ class _MapScreenState extends State<MapScreen> {
                     });
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: _selectedRoute == 3 ? Colors.green : Colors.white,
-                    minimumSize: Size(400, 50), // Set the width and height for a wider button
-                    shape: RoundedRectangleBorder( // Adjust the button's shape
-                      borderRadius: BorderRadius.circular(0), // You can change the value to make it less curved
-                    ),
+                    primary: _selectedRoute == 3 ? Colors.green : Colors.grey,
                   ),
-                  child: Text('Line 3',
-                    style: TextStyle(
-                      color: _selectedRoute == 3 ? Colors.white : Colors.black,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
+                  child: Text('Route 3'),
                 ),
-
-                SizedBox(width: 16),
-                ElevatedButton(
-                  onPressed: () {
-                    setState(() {
-                      _selectedRoute = 4; // Switch to Route 4.
-                    });
-                  },
-                  style: ElevatedButton.styleFrom(
-                    primary: _selectedRoute == 4 ? Colors.purple : Colors.white,
-                    minimumSize: Size(400, 50), // Set the width and height for a wider button
-                    shape: RoundedRectangleBorder( // Adjust the button's shape
-                      borderRadius: BorderRadius.circular(0), // You can change the value to make it less curved
-                    ),
+                Expanded(
+                  child: GoogleMap(
+                    mapType: MapType.normal,
+                    myLocationButtonEnabled: false,
+                    zoomControlsEnabled: false,
+                    markers: _selectedRoute == 1
+                        ? _route1BusStopMarkers
+                        : _selectedRoute == 2
+                            ? _route2BusStopMarkers
+                            : _route3BusStopMarkers,
+                    polylines: _polylines.where((polyline) {
+                      // Filter and display the selected route.
+                      if (_selectedRoute == 1) {
+                        return polyline.polylineId.value == 'route1';
+                      } else if (_selectedRoute == 2) {
+                        return polyline.polylineId.value == 'route2';
+                      } else {
+                        return polyline.polylineId.value == 'route3';
+                      }
+                    }).toSet(),
+                    initialCameraPosition: _initialCameraPosition,
+                    onMapCreated: (GoogleMapController controller) {
+                      // You can interact with the Google Map here
+                    },
                   ),
-                  child: Text('Line 4',
-                    style: TextStyle(
-                      color: _selectedRoute == 4 ? Colors.white : Colors.black,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
-
+                )
               ],
             )
           : _pages[_currentIndex],
@@ -990,7 +683,7 @@ class _MapScreenState extends State<MapScreen> {
             label: 'Messages',
           ),
         ],
-        selectedItemColor: Colors.blueAccent,
+        selectedItemColor: Colors.blue,
         unselectedItemColor: Colors.black,
       ),
     );
