@@ -40,10 +40,10 @@ class MapScreen extends StatefulWidget {
 }
 
 class _MapScreenState extends State<MapScreen> {
-  // static const _initialCameraPosition = CameraPosition(
-  //   target: LatLng(2.998255379276642, 101.71427184760564),
-  //   zoom: 14.8,
-  // );
+  static const _initialCameraPosition = CameraPosition(
+    target: LatLng(2.998255379276642, 101.71427184760564),
+    zoom: 14.8,
+  );
 
   int _currentIndex = 0;
 
@@ -56,20 +56,17 @@ class _MapScreenState extends State<MapScreen> {
     BusStop(
       id: 'SJ162-1',
       name: 'KTAG',
-      position: LatLng(2.9906065922278406,
-          101.71072672072536), // Replace with the actual coordinates
+      position: LatLng(2.9906065922278406, 101.71072672072536), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ164-1',
       name: 'K14',
-      position: LatLng(2.9928782265949017,
-          101.71825515618721), // Replace with the actual coordinates
+      position: LatLng(2.9928782265949017, 101.71825515618721), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ144-1',
       name: 'FBMK',
-      position: LatLng(2.9999843428909356,
-          101.71484887998834), // Replace with the actual coordinates
+      position: LatLng(2.9999843428909356, 101.71484887998834), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ155-1',
@@ -79,53 +76,51 @@ class _MapScreenState extends State<MapScreen> {
     BusStop(
       id: 'SJ159-1',
       name: 'FS',
-      position: LatLng(3.0007085010742323,
-          101.7068627631204), // Replace with the actual coordinates
+      position: LatLng(3.0007085010742323, 101.7068627631204), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ160-1',
       name: 'Library',
-      position: LatLng(3.0026803506513735,
-          101.70695294223508), // Replace with the actual coordinates
+      position: LatLng(3.0026803506513735, 101.70695294223508), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ151-1',
       name: 'FSTM',
-      position: LatLng(3.004266665826632,
-          101.70862908173052), // Replace with the actual coordinates
+      position: LatLng(3.004266665826632, 101.70862908173052), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ153-1',
       name: 'Central',
-      position: LatLng(3.0012917167440483,
-          101.70969564394254), // Replace with the actual coordinates
+      position: LatLng(3.0012917167440483, 101.70969564394254), // Replace with the actual coordinates
     ),
+    // BusStop(
+    //   id: 'SJ824-1',
+    //   name: 'KC',
+    //   position: LatLng(2.995312111780624,
+    //       101.70886619987638), // Replace with the actual coordinates
+    // ),
   ];
 
   final List<BusStop> busStopsRoute2 = [
     BusStop(
       id: 'SJ163-2',
       name: 'SFC',
-      position: LatLng(2.9921172880176776,
-          101.71541414629283), // Replace with the actual coordinates
+      position: LatLng(2.9921172880176776, 101.71541414629283), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ162-2',
       name: 'KTAG',
-      position: LatLng(2.9906065922278406,
-          101.71072672072536), // Replace with the actual coordinates
+      position: LatLng(2.9906065922278406, 101.71072672072536), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ164-2',
       name: 'K14',
-      position: LatLng(2.9928782265949017,
-          101.71825515618721), // Replace with the actual coordinates
+      position: LatLng(2.9928782265949017, 101.71825515618721), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ144-2',
       name: 'FBMK',
-      position: LatLng(2.9999843428909356,
-          101.71484887998834), // Replace with the actual coordinates
+      position: LatLng(2.9999843428909356, 101.71484887998834), // Replace with the actual coordinates
     ),
 
     BusStop(
@@ -136,26 +131,22 @@ class _MapScreenState extends State<MapScreen> {
     BusStop(
       id: 'SJ159-2',
       name: 'FS',
-      position: LatLng(3.0007085010742323,
-          101.7068627631204), // Replace with the actual coordinates
+      position: LatLng(3.0007085010742323, 101.7068627631204), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ160-2',
       name: 'Library',
-      position: LatLng(3.0026803506513735,
-          101.70695294223508), // Replace with the actual coordinates
+      position: LatLng(3.0026803506513735, 101.70695294223508), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ151-2',
       name: 'FSTM',
-      position: LatLng(3.004266665826632,
-          101.70862908173052), // Replace with the actual coordinates
+      position: LatLng(3.004266665826632, 101.70862908173052), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ153-2',
       name: 'Central',
-      position: LatLng(3.0012917167440483,
-          101.70969564394254), // Replace with the actual coordinates
+      position: LatLng(3.0012917167440483, 101.70969564394254), // Replace with the actual coordinates
     ),
     // BusStop(
     //   id: 'SJ824-2',
@@ -169,14 +160,12 @@ class _MapScreenState extends State<MapScreen> {
     BusStop(
       id: '111',
       name: 'FRSB',
-      position: LatLng(3.003399376837077,
-          101.72039834803533), // Replace with the actual coordinates
+      position: LatLng(3.003399376837077, 101.72039834803533), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ144-3',
       name: 'FBMK',
-      position: LatLng(2.9999843428909356,
-          101.71484887998834), // Replace with the actual coordinates
+      position: LatLng(2.9999843428909356, 101.71484887998834), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ155-3',
@@ -186,38 +175,32 @@ class _MapScreenState extends State<MapScreen> {
     BusStop(
       id: 'SJ159-3',
       name: 'FS',
-      position: LatLng(3.0007085010742323,
-          101.7068627631204), // Replace with the actual coordinates
+      position: LatLng(3.0007085010742323, 101.7068627631204), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ160-3',
       name: 'Library',
-      position: LatLng(3.0026803506513735,
-          101.70695294223508), // Replace with the actual coordinates
+      position: LatLng(3.0026803506513735, 101.70695294223508), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ151-3',
       name: 'FSTM',
-      position: LatLng(3.004266665826632,
-          101.70862908173052), // Replace with the actual coordinates
+      position: LatLng(3.004266665826632, 101.70862908173052), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ153-3',
       name: 'Central',
-      position: LatLng(3.0012917167440483,
-          101.70969564394254), // Replace with the actual coordinates
+      position: LatLng(3.0012917167440483, 101.70969564394254), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ101-3',
       name: 'KAA',
-      position: LatLng(3.0002087160519513,
-          101.71523932855689), // Replace with the actual coordinates
+      position: LatLng(3.0002087160519513, 101.71523932855689), // Replace with the actual coordinates
     ),
     BusStop(
       id: '1111',
       name: 'K10',
-      position: LatLng(3.0098003882950177,
-          101.71972624064571), // Replace with the actual coordinates
+      position: LatLng(3.0098003882950177, 101.71972624064571), // Replace with the actual coordinates
     ),
 
   ];
@@ -226,14 +209,12 @@ class _MapScreenState extends State<MapScreen> {
     BusStop(
       id: 'SJ101-4',
       name: 'KAA',
-      position: LatLng(3.0002087160519513,
-          101.71523932855689), // Replace with the actual coordinates
+      position: LatLng(3.0002087160519513, 101.71523932855689), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ144-4',
       name: 'FBMK',
-      position: LatLng(2.9999843428909356,
-          101.71484887998834), // Replace with the actual coordinates
+      position: LatLng(2.9999843428909356, 101.71484887998834), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ155-4',
@@ -243,32 +224,27 @@ class _MapScreenState extends State<MapScreen> {
     BusStop(
       id: 'SJ159-4',
       name: 'FS',
-      position: LatLng(3.0007085010742323,
-          101.7068627631204), // Replace with the actual coordinates
+      position: LatLng(3.0007085010742323, 101.7068627631204), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ160-4',
       name: 'Library',
-      position: LatLng(3.0026803506513735,
-          101.70695294223508), // Replace with the actual coordinates
+      position: LatLng(3.0026803506513735, 101.70695294223508), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ151-4',
       name: 'FSTM',
-      position: LatLng(3.004266665826632,
-          101.70862908173052), // Replace with the actual coordinates
+      position: LatLng(3.004266665826632, 101.70862908173052), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ153-4',
       name: 'Central',
-      position: LatLng(3.0012917167440483,
-          101.70969564394254), // Replace with the actual coordinates
+      position: LatLng(3.0012917167440483, 101.70969564394254), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ800-4',
       name: 'KMB',
-      position: LatLng(2.9783026611102827,
-          101.71456541612027), // Replace with the actual coordinates
+      position: LatLng(2.9783026611102827, 101.71456541612027), // Replace with the actual coordinates
     ),
   ];
 
@@ -276,14 +252,12 @@ class _MapScreenState extends State<MapScreen> {
     BusStop(
       id: 'SJ163-5',
       name: 'SFC',
-      position: LatLng(2.9921172880176776,
-          101.71541414629283), // Replace with the actual coordinates
+      position: LatLng(2.9921172880176776, 101.71541414629283), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ162-5',
       name: 'KTAG',
-      position: LatLng(2.9906065922278406,
-          101.71072672072536), // Replace with the actual coordinates
+      position: LatLng(2.9906065922278406, 101.71072672072536), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ100-5',
@@ -776,7 +750,7 @@ class _MapScreenState extends State<MapScreen> {
 
   List<LatLng> roadCoordinatesRoute5 = [
     LatLng(2.991720962366472, 101.707556203837),
-    LatLng(2.991733689682825, 101.70762144500674), // Starting Bus Stop 1: PFC
+    LatLng(2.991733689682825, 101.70762144500674),// Starting Bus Stop 1: PFC
     LatLng(2.991520998102801, 101.70761314769751),
     LatLng(2.9907171435228257, 101.70770010942849),
     LatLng(2.9905446607193134, 101.70792385780781),
@@ -1004,7 +978,6 @@ class _MapScreenState extends State<MapScreen> {
 
   List<Widget> _pages = [];
   int _selectedRoute = 1;
-  late GoogleMapController _googleMapController;
 
   @override
   void initState() {
@@ -1113,46 +1086,28 @@ class _MapScreenState extends State<MapScreen> {
       polylineId: PolylineId('route5'),
       color: Colors.deepPurple, // Set the color to red for Route 4.
       width: 6,
-      points: roadCoordinatesRoute5,
-      // Replace with Route 4 coordinates.
+      points: roadCoordinatesRoute5, // Replace with Route 4 coordinates.
     ));
 
 
     _pages = [
+      // GoogleMap(
+      //   mapType: MapType.normal,
+      //   myLocationButtonEnabled: false,
+      //   zoomControlsEnabled: false,
+      //   markers: _markers,
+      //   polylines: _polylines,
+      //   initialCameraPosition: _initialCameraPosition,
+      //   onMapCreated: (GoogleMapController controller) {
+      //     // You can interact with the Google Map here
+      //   },
+      // ),
       const Text('Bus Stops'),
       const Text('Bus Routes'),
       const Text('Navigation'),
       const Text('Starred'),
       const Text('Messages'),
     ];
-  }
-
-  CameraPosition _getInitialCameraPosition() {
-    switch (_selectedRoute) {
-      case 1:
-        return CameraPosition(target: LatLng(2.998255379276642, 101.71427184760564), zoom: 15);
-      case 2:
-        return CameraPosition(target: LatLng(2.998255379276642, 101.71427184760564), zoom: 15);
-      case 3:
-        return CameraPosition(target: LatLng(3.0050310471490635, 101.71331130494058), zoom: 15);
-      case 4:
-        return CameraPosition(target: LatLng(2.9916115616191914, 101.71238176524159), zoom: 14.3);
-      case 5:
-        return CameraPosition(target: LatLng(2.989740819024872, 101.72134254839467), zoom: 14.2);
-      default:
-        return CameraPosition(target: LatLng(0, 0), zoom: 10);
-    }
-  }
-
-  void _updateSelectedRoute(int route) {
-    setState(() {
-      _selectedRoute = route;
-      _googleMapController.animateCamera(
-        CameraUpdate.newCameraPosition(
-          _getInitialCameraPosition(),
-        ),
-      );
-    });
   }
 
   @override
@@ -1193,7 +1148,6 @@ class _MapScreenState extends State<MapScreen> {
                   ? _route4BusStopMarkers
                   : _route5BusStopMarkers,
 
-
               polylines: _polylines.where((polyline) {
                 // Filter and display the selected route.
                 if (_selectedRoute == 1) {
@@ -1208,14 +1162,12 @@ class _MapScreenState extends State<MapScreen> {
                   return polyline.polylineId.value == 'route5';
                 }
               }).toSet(),
-              initialCameraPosition: _getInitialCameraPosition(),
+              initialCameraPosition: _initialCameraPosition,
               onMapCreated: (GoogleMapController controller) {
-                _googleMapController = controller;
-              // You can interact with the Google Map here
+                // You can interact with the Google Map here
               },
             ),
           ),
-
 
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -1223,18 +1175,15 @@ class _MapScreenState extends State<MapScreen> {
               ElevatedButton(
                 onPressed: () {
                   setState(() {
-                    _selectedRoute = 1;
-                    _updateSelectedRoute(1);// Switch to Route 1.
+                    _selectedRoute = 1; // Switch to Route 1.
                   });
                 },
                 style: ElevatedButton.styleFrom(
                   primary:
                   _selectedRoute == 1 ? Colors.blue : Colors.white,
-                  minimumSize: Size(400, 50),
-                  // Set the width and height for a wider button
+                  minimumSize: Size(400, 50), // Set the width and height for a wider button
                   shape: RoundedRectangleBorder( // Adjust the button's shape
-                    borderRadius: BorderRadius.circular(
-                        0), // You can change the value to make it less curved
+                    borderRadius: BorderRadius.circular(0), // You can change the value to make it less curved
                   ),
                 ),
                 child: Text('Route 1',
@@ -1249,17 +1198,14 @@ class _MapScreenState extends State<MapScreen> {
               ElevatedButton(
                 onPressed: () {
                   setState(() {
-                    _selectedRoute = 2;
-                    _updateSelectedRoute(2);// Switch to Route 2.
+                    _selectedRoute = 2; // Switch to Route 2.
                   });
                 },
                 style: ElevatedButton.styleFrom(
                   primary: _selectedRoute == 2 ? Colors.green : Colors.white,
-                  minimumSize: Size(400, 50),
-                  // Set the width and height for a wider button
+                  minimumSize: Size(400, 50), // Set the width and height for a wider button
                   shape: RoundedRectangleBorder( // Adjust the button's shape
-                    borderRadius: BorderRadius.circular(
-                        0), // You can change the value to make it less curved
+                    borderRadius: BorderRadius.circular(0), // You can change the value to make it less curved
                   ),
                 ),
                 child: Text('Route 2',
@@ -1276,17 +1222,14 @@ class _MapScreenState extends State<MapScreen> {
           ElevatedButton(
             onPressed: () {
               setState(() {
-                _selectedRoute = 3;
-                _updateSelectedRoute(3);// Switch to Route 3.
+                _selectedRoute = 3; // Switch to Route 3.
               });
             },
             style: ElevatedButton.styleFrom(
               primary: _selectedRoute == 3 ? Colors.orange : Colors.white,
-              minimumSize: Size(400, 50),
-              // Set the width and height for a wider button
+              minimumSize: Size(400, 50), // Set the width and height for a wider button
               shape: RoundedRectangleBorder( // Adjust the button's shape
-                borderRadius: BorderRadius.circular(
-                    0), // You can change the value to make it less curved
+                borderRadius: BorderRadius.circular(0), // You can change the value to make it less curved
               ),
             ),
             child: Text('Route 3',
@@ -1301,18 +1244,14 @@ class _MapScreenState extends State<MapScreen> {
           ElevatedButton(
             onPressed: () {
               setState(() {
-                _selectedRoute = 4;
-                _updateSelectedRoute(4);// Switch to Route 4.
+                _selectedRoute = 4; // Switch to Route 4.
               });
             },
             style: ElevatedButton.styleFrom(
-              primary: _selectedRoute == 4 ? Colors.lightBlueAccent : Colors
-                  .white,
-              minimumSize: Size(400, 50),
-              // Set the width and height for a wider button
+              primary: _selectedRoute == 4 ? Colors.lightBlueAccent : Colors.white,
+              minimumSize: Size(400, 50), // Set the width and height for a wider button
               shape: RoundedRectangleBorder( // Adjust the button's shape
-                borderRadius: BorderRadius.circular(
-                    0), // You can change the value to make it less curved
+                borderRadius: BorderRadius.circular(0), // You can change the value to make it less curved
               ),
             ),
             child: Text('Route 4',
@@ -1327,17 +1266,14 @@ class _MapScreenState extends State<MapScreen> {
           ElevatedButton(
             onPressed: () {
               setState(() {
-                _selectedRoute = 5;
-                _updateSelectedRoute(5);// Switch to Route 4.
+                _selectedRoute = 5; // Switch to Route 4.
               });
             },
             style: ElevatedButton.styleFrom(
               primary: _selectedRoute == 5 ? Colors.deepPurple : Colors.white,
-              minimumSize: Size(400, 50),
-              // Set the width and height for a wider button
+              minimumSize: Size(400, 50), // Set the width and height for a wider button
               shape: RoundedRectangleBorder( // Adjust the button's shape
-                borderRadius: BorderRadius.circular(
-                    0), // You can change the value to make it less curved
+                borderRadius: BorderRadius.circular(0), // You can change the value to make it less curved
               ),
             ),
             child: Text('Route 5',
@@ -1385,6 +1321,3 @@ class _MapScreenState extends State<MapScreen> {
     );
   }
 }
-
-
-
