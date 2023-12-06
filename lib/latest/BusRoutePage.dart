@@ -12,13 +12,13 @@ class BusStop {
     required this.position,
   });
 }
-
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+//
+// void main() {
+//   runApp(const MyApp());
+// }
+//
+// class MyApp extends StatelessWidget {
+//   const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -29,17 +29,17 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: MapScreen(),
+      home: BusRoutePage(),
     );
   }
-}
 
-class MapScreen extends StatefulWidget {
+
+class BusRoutePage extends StatefulWidget {
   @override
-  _MapScreenState createState() => _MapScreenState();
+  _BusRoutePage createState() => _BusRoutePage();
 }
 
-class _MapScreenState extends State<MapScreen> {
+class _BusRoutePage extends State<BusRoutePage> {
   // static const _initialCameraPosition = CameraPosition(
   //   target: LatLng(2.998255379276642, 101.71427184760564),
   //   zoom: 14.8,
@@ -56,20 +56,17 @@ class _MapScreenState extends State<MapScreen> {
     BusStop(
       id: 'SJ162-1',
       name: 'KTAG',
-      position: LatLng(2.9906065922278406,
-          101.71072672072536), // Replace with the actual coordinates
+      position: LatLng(2.9906065922278406, 101.71072672072536), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ164-1',
       name: 'K14',
-      position: LatLng(2.9928782265949017,
-          101.71825515618721), // Replace with the actual coordinates
+      position: LatLng(2.9928782265949017, 101.71825515618721), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ144-1',
       name: 'FBMK',
-      position: LatLng(2.9999843428909356,
-          101.71484887998834), // Replace with the actual coordinates
+      position: LatLng(2.9999843428909356, 101.71484887998834), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ155-1',
@@ -79,26 +76,22 @@ class _MapScreenState extends State<MapScreen> {
     BusStop(
       id: 'SJ159-1',
       name: 'FS',
-      position: LatLng(3.0007085010742323,
-          101.7068627631204), // Replace with the actual coordinates
+      position: LatLng(3.0007085010742323, 101.7068627631204), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ160-1',
       name: 'Library',
-      position: LatLng(3.0026803506513735,
-          101.70695294223508), // Replace with the actual coordinates
+      position: LatLng(3.0026803506513735, 101.70695294223508), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ151-1',
       name: 'FSTM',
-      position: LatLng(3.004266665826632,
-          101.70862908173052), // Replace with the actual coordinates
+      position: LatLng(3.004266665826632, 101.70862908173052), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ153-1',
       name: 'Central',
-      position: LatLng(3.0012917167440483,
-          101.70969564394254), // Replace with the actual coordinates
+      position: LatLng(3.0012917167440483, 101.70969564394254), // Replace with the actual coordinates
     ),
   ];
 
@@ -106,26 +99,22 @@ class _MapScreenState extends State<MapScreen> {
     BusStop(
       id: 'SJ163-2',
       name: 'SFC',
-      position: LatLng(2.9921172880176776,
-          101.71541414629283), // Replace with the actual coordinates
+      position: LatLng(2.9921172880176776, 101.71541414629283), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ162-2',
       name: 'KTAG',
-      position: LatLng(2.9906065922278406,
-          101.71072672072536), // Replace with the actual coordinates
+      position: LatLng(2.9906065922278406, 101.71072672072536), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ164-2',
       name: 'K14',
-      position: LatLng(2.9928782265949017,
-          101.71825515618721), // Replace with the actual coordinates
+      position: LatLng(2.9928782265949017, 101.71825515618721), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ144-2',
       name: 'FBMK',
-      position: LatLng(2.9999843428909356,
-          101.71484887998834), // Replace with the actual coordinates
+      position: LatLng(2.9999843428909356, 101.71484887998834), // Replace with the actual coordinates
     ),
 
     BusStop(
@@ -136,47 +125,35 @@ class _MapScreenState extends State<MapScreen> {
     BusStop(
       id: 'SJ159-2',
       name: 'FS',
-      position: LatLng(3.0007085010742323,
-          101.7068627631204), // Replace with the actual coordinates
+      position: LatLng(3.0007085010742323, 101.7068627631204), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ160-2',
       name: 'Library',
-      position: LatLng(3.0026803506513735,
-          101.70695294223508), // Replace with the actual coordinates
+      position: LatLng(3.0026803506513735, 101.70695294223508), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ151-2',
       name: 'FSTM',
-      position: LatLng(3.004266665826632,
-          101.70862908173052), // Replace with the actual coordinates
+      position: LatLng(3.004266665826632, 101.70862908173052), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ153-2',
       name: 'Central',
-      position: LatLng(3.0012917167440483,
-          101.70969564394254), // Replace with the actual coordinates
+      position: LatLng(3.0012917167440483, 101.70969564394254), // Replace with the actual coordinates
     ),
-    // BusStop(
-    //   id: 'SJ824-2',
-    //   name: 'KC',
-    //   position: LatLng(2.995312111780624,
-    //       101.70886619987638), // Replace with the actual coordinates
-    // ),
   ];
 
   final List<BusStop> busStopsRoute3 = [
     BusStop(
       id: '111',
       name: 'FRSB',
-      position: LatLng(3.003399376837077,
-          101.72039834803533), // Replace with the actual coordinates
+      position: LatLng(3.003399376837077, 101.72039834803533), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ144-3',
       name: 'FBMK',
-      position: LatLng(2.9999843428909356,
-          101.71484887998834), // Replace with the actual coordinates
+      position: LatLng(2.9999843428909356, 101.71484887998834), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ155-3',
@@ -186,38 +163,32 @@ class _MapScreenState extends State<MapScreen> {
     BusStop(
       id: 'SJ159-3',
       name: 'FS',
-      position: LatLng(3.0007085010742323,
-          101.7068627631204), // Replace with the actual coordinates
+      position: LatLng(3.0007085010742323, 101.7068627631204), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ160-3',
       name: 'Library',
-      position: LatLng(3.0026803506513735,
-          101.70695294223508), // Replace with the actual coordinates
+      position: LatLng(3.0026803506513735, 101.70695294223508), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ151-3',
       name: 'FSTM',
-      position: LatLng(3.004266665826632,
-          101.70862908173052), // Replace with the actual coordinates
+      position: LatLng(3.004266665826632, 101.70862908173052), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ153-3',
       name: 'Central',
-      position: LatLng(3.0012917167440483,
-          101.70969564394254), // Replace with the actual coordinates
+      position: LatLng(3.0012917167440483, 101.70969564394254), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ101-3',
       name: 'KAA',
-      position: LatLng(3.0002087160519513,
-          101.71523932855689), // Replace with the actual coordinates
+      position: LatLng(3.0002087160519513, 101.71523932855689), // Replace with the actual coordinates
     ),
     BusStop(
       id: '1111',
       name: 'K10',
-      position: LatLng(3.0098003882950177,
-          101.71972624064571), // Replace with the actual coordinates
+      position: LatLng(3.0098003882950177, 101.71972624064571), // Replace with the actual coordinates
     ),
 
   ];
@@ -226,14 +197,12 @@ class _MapScreenState extends State<MapScreen> {
     BusStop(
       id: 'SJ101-4',
       name: 'KAA',
-      position: LatLng(3.0002087160519513,
-          101.71523932855689), // Replace with the actual coordinates
+      position: LatLng(3.0002087160519513, 101.71523932855689), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ144-4',
       name: 'FBMK',
-      position: LatLng(2.9999843428909356,
-          101.71484887998834), // Replace with the actual coordinates
+      position: LatLng(2.9999843428909356, 101.71484887998834), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ155-4',
@@ -243,32 +212,27 @@ class _MapScreenState extends State<MapScreen> {
     BusStop(
       id: 'SJ159-4',
       name: 'FS',
-      position: LatLng(3.0007085010742323,
-          101.7068627631204), // Replace with the actual coordinates
+      position: LatLng(3.0007085010742323, 101.7068627631204), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ160-4',
       name: 'Library',
-      position: LatLng(3.0026803506513735,
-          101.70695294223508), // Replace with the actual coordinates
+      position: LatLng(3.0026803506513735, 101.70695294223508), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ151-4',
       name: 'FSTM',
-      position: LatLng(3.004266665826632,
-          101.70862908173052), // Replace with the actual coordinates
+      position: LatLng(3.004266665826632, 101.70862908173052), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ153-4',
       name: 'Central',
-      position: LatLng(3.0012917167440483,
-          101.70969564394254), // Replace with the actual coordinates
+      position: LatLng(3.0012917167440483, 101.70969564394254), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ800-4',
       name: 'KMB',
-      position: LatLng(2.9783026611102827,
-          101.71456541612027), // Replace with the actual coordinates
+      position: LatLng(2.9783026611102827, 101.71456541612027), // Replace with the actual coordinates
     ),
   ];
 
@@ -276,14 +240,12 @@ class _MapScreenState extends State<MapScreen> {
     BusStop(
       id: 'SJ163-5',
       name: 'SFC',
-      position: LatLng(2.9921172880176776,
-          101.71541414629283), // Replace with the actual coordinates
+      position: LatLng(2.9921172880176776, 101.71541414629283), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ162-5',
       name: 'KTAG',
-      position: LatLng(2.9906065922278406,
-          101.71072672072536), // Replace with the actual coordinates
+      position: LatLng(2.9906065922278406, 101.71072672072536), // Replace with the actual coordinates
     ),
     BusStop(
       id: 'SJ100-5',
@@ -1015,7 +977,7 @@ class _MapScreenState extends State<MapScreen> {
       return Marker(
         markerId: MarkerId(busStop.id),
         position: busStop.position,
-        icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueYellow),
+        icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueRed),
         infoWindow: InfoWindow(
           title: busStop.name,
           snippet: '',
@@ -1028,7 +990,7 @@ class _MapScreenState extends State<MapScreen> {
       return Marker(
         markerId: MarkerId(busStop.id),
         position: busStop.position,
-        icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueYellow),
+        icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueRed),
         infoWindow: InfoWindow(
           title: busStop.name,
           snippet: '',
@@ -1041,7 +1003,7 @@ class _MapScreenState extends State<MapScreen> {
       return Marker(
         markerId: MarkerId(busStop.id),
         position: busStop.position,
-        icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueYellow),
+        icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueRed),
         infoWindow: InfoWindow(
           title: busStop.name,
           snippet: '',
@@ -1054,7 +1016,7 @@ class _MapScreenState extends State<MapScreen> {
       return Marker(
         markerId: MarkerId(busStop.id),
         position: busStop.position,
-        icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueYellow),
+        icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueRed),
         infoWindow: InfoWindow(
           title: busStop.name,
           snippet: '',
@@ -1067,7 +1029,7 @@ class _MapScreenState extends State<MapScreen> {
       return Marker(
         markerId: MarkerId(busStop.id),
         position: busStop.position,
-        icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueYellow),
+        icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueRed),
         infoWindow: InfoWindow(
           title: busStop.name,
           snippet: '',
@@ -1119,7 +1081,8 @@ class _MapScreenState extends State<MapScreen> {
 
 
     _pages = [
-      const Text('Bus Stops'),
+      // const Text('Bus Stops'),
+      _buildBusStopsPage(), // Bus Stops Page
       const Text('Bus Routes'),
       const Text('Navigation'),
       const Text('Starred'),
@@ -1127,18 +1090,91 @@ class _MapScreenState extends State<MapScreen> {
     ];
   }
 
+  Widget _buildBusStopsPage() {
+    List<Map<String, String>> manualBusStops = [
+      {'name': 'Putra Foodcourt', 'shortName': 'PFC'},
+      {'name': 'Tan Sri Aishah Ghani College', 'shortName': 'KTAG'},
+      {'name': 'Serumpun Foodcourt', 'shortName': 'SFC'},
+      {'name': 'Fourteenth College', 'shortName': 'K14'},
+      {'name': 'Institute of Bioscience', 'shortName': 'IBS'},
+      {
+        'name': 'Faculty of Modern Languages & Communication',
+        'shortName': 'FBMK'
+      },
+      {
+        'name': 'Faculty of Computer Science & Information Technology',
+        'shortName': 'FSKTM'
+      },
+      {'name': 'Faculty of Science', 'shortName': 'FS'},
+      {'name': 'Sultan Abdul Samad Library', 'shortName': 'Library'},
+      {'name': 'Faculty of Food Science & Technology', 'shortName': 'FSTM'},
+      {
+        'name': 'Central (Great Hall & Experimental Theatre)',
+        'shortName': 'Central'
+      },
+      {
+        'name': 'Academic Complex A (Opp Faculty of Modern Languages & Communication)',
+        'shortName': 'KAA'
+      },
+      {'name': 'Faculty of Design & Architecture', 'shortName': 'FRSB'},
+      {'name': 'Tenth College', 'shortName': 'K10'},
+      {'name': 'Tan Sri Mustaffa Babjee', 'shortName': 'KMB'},
+      {'name': 'Tenth College', 'shortName': 'K10'},
+      {'name': 'School of Graduate Studies', 'shortName': 'SGS'},
+      {'name': 'Banquet Hall', 'shortName': 'Banquet'},
+      {'name': 'Sports Academy', 'shortName': 'Academy'},
+      {'name': 'Faculty of Agriculture Cafeteria', 'shortName': 'FPC'},
+      {'name': 'Faculty of Agriculture', 'shortName': 'FP'},
+      // Add more bus stop names and short names as needed
+    ];
+
+    return ListView.builder(
+      itemCount: manualBusStops.length,
+      itemBuilder: (context, index) {
+        String busStopName = manualBusStops[index]['name']!;
+        String busStopShortName = manualBusStops[index]['shortName']!;
+
+        return Column(
+          children: [
+            ListTile(
+              title: Text(
+                busStopName,
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+              subtitle: Text(busStopShortName),
+              // You can customize the ListTile further if needed
+            ),
+            SizedBox(
+              height: 0, // Adjust the height as needed
+            ),
+            Divider(
+              color: Colors.grey,
+              thickness: 0,
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+
   CameraPosition _getInitialCameraPosition() {
     switch (_selectedRoute) {
       case 1:
-        return CameraPosition(target: LatLng(2.998255379276642, 101.71427184760564), zoom: 15);
+        return CameraPosition(
+            target: LatLng(2.998255379276642, 101.71427184760564), zoom: 14.9);
       case 2:
-        return CameraPosition(target: LatLng(2.998255379276642, 101.71427184760564), zoom: 15);
+        return CameraPosition(
+            target: LatLng(2.998255379276642, 101.71427184760564), zoom: 14.9);
       case 3:
-        return CameraPosition(target: LatLng(3.0050310471490635, 101.71331130494058), zoom: 15);
+        return CameraPosition(
+            target: LatLng(3.0050310471490635, 101.71331130494058), zoom: 14.9);
       case 4:
-        return CameraPosition(target: LatLng(2.9916115616191914, 101.71238176524159), zoom: 14.3);
+        return CameraPosition(
+            target: LatLng(2.9916115616191914, 101.71238176524159), zoom: 14.1);
       case 5:
-        return CameraPosition(target: LatLng(2.989740819024872, 101.72134254839467), zoom: 14.2);
+        return CameraPosition(
+            target: LatLng(2.989740819024872, 101.72134254839467), zoom: 14.1);
       default:
         return CameraPosition(target: LatLng(0, 0), zoom: 10);
     }
@@ -1159,24 +1195,16 @@ class _MapScreenState extends State<MapScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(
-          icon: const Icon(Icons.menu),
-          onPressed: () {
-            // Handle menu button tap
-          },
-        ),
-        title: Text('Search Bus Stops'),
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.search),
-            onPressed: () {
-              // Handle search button tap
-            },
+        title: Text(
+          'Bus Routes',
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
           ),
-        ],
+        ),
+        backgroundColor: Color(0xFF13E573),
       ),
-      body: _currentIndex == 1 // Check if the Bus Routes tab is selected.
-          ? Column(
+      body: Column(
         children: [
           Expanded(
             child: GoogleMap(
@@ -1192,10 +1220,7 @@ class _MapScreenState extends State<MapScreen> {
                   : _selectedRoute == 4
                   ? _route4BusStopMarkers
                   : _route5BusStopMarkers,
-
-
               polylines: _polylines.where((polyline) {
-                // Filter and display the selected route.
                 if (_selectedRoute == 1) {
                   return polyline.polylineId.value == 'route1';
                 } else if (_selectedRoute == 2) {
@@ -1211,12 +1236,9 @@ class _MapScreenState extends State<MapScreen> {
               initialCameraPosition: _getInitialCameraPosition(),
               onMapCreated: (GoogleMapController controller) {
                 _googleMapController = controller;
-              // You can interact with the Google Map here
               },
             ),
           ),
-
-
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -1224,167 +1246,124 @@ class _MapScreenState extends State<MapScreen> {
                 onPressed: () {
                   setState(() {
                     _selectedRoute = 1;
-                    _updateSelectedRoute(1);// Switch to Route 1.
+                    _updateSelectedRoute(1);
                   });
                 },
                 style: ElevatedButton.styleFrom(
-                  primary:
-                  _selectedRoute == 1 ? Colors.blue : Colors.white,
+                  primary: _selectedRoute == 1 ? Colors.blue : Colors.white,
                   minimumSize: Size(400, 50),
-                  // Set the width and height for a wider button
-                  shape: RoundedRectangleBorder( // Adjust the button's shape
-                    borderRadius: BorderRadius.circular(
-                        0), // You can change the value to make it less curved
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(0),
                   ),
                 ),
-                child: Text('Route 1',
+                child: Text(
+                  'Route 1',
                   style: TextStyle(
                     color: _selectedRoute == 1 ? Colors.white : Colors.black,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
               ),
-
               SizedBox(width: 16),
               ElevatedButton(
                 onPressed: () {
                   setState(() {
                     _selectedRoute = 2;
-                    _updateSelectedRoute(2);// Switch to Route 2.
+                    _updateSelectedRoute(2);
                   });
                 },
                 style: ElevatedButton.styleFrom(
                   primary: _selectedRoute == 2 ? Colors.green : Colors.white,
                   minimumSize: Size(400, 50),
-                  // Set the width and height for a wider button
-                  shape: RoundedRectangleBorder( // Adjust the button's shape
-                    borderRadius: BorderRadius.circular(
-                        0), // You can change the value to make it less curved
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(0),
                   ),
                 ),
-                child: Text('Route 2',
+                child: Text(
+                  'Route 2',
                   style: TextStyle(
                     color: _selectedRoute == 2 ? Colors.white : Colors.black,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
               ),
+              SizedBox(width: 16),
+              ElevatedButton(
+                onPressed: () {
+                  setState(() {
+                    _selectedRoute = 3;
+                    _updateSelectedRoute(3);
+                  });
+                },
+                style: ElevatedButton.styleFrom(
+                  primary: _selectedRoute == 3 ? Colors.orange : Colors.white,
+                  minimumSize: Size(400, 50),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(0),
+                  ),
+                ),
+                child: Text(
+                  'Route 3',
+                  style: TextStyle(
+                    color: _selectedRoute == 3 ? Colors.white : Colors.black,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              SizedBox(width: 16),
+              ElevatedButton(
+                onPressed: () {
+                  setState(() {
+                    _selectedRoute = 4;
+                    _updateSelectedRoute(4);
+                  });
+                },
+                style: ElevatedButton.styleFrom(
+                  primary: _selectedRoute == 4
+                      ? Colors.lightBlueAccent
+                      : Colors.white,
+                  minimumSize: Size(400, 50),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(0),
+                  ),
+                ),
+                child: Text(
+                  'Route 4',
+                  style: TextStyle(
+                    color: _selectedRoute == 4 ? Colors.white : Colors.black,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              SizedBox(width: 16),
+              ElevatedButton(
+                onPressed: () {
+                  setState(() {
+                    _selectedRoute = 5;
+                    _updateSelectedRoute(5);
+                  });
+                },
+                style: ElevatedButton.styleFrom(
+                  primary: _selectedRoute == 5
+                      ? Colors.deepPurple
+                      : Colors.white,
+                  minimumSize: Size(400, 50),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(0),
+                  ),
+                ),
+                child: Text(
+                  'Route 5',
+                  style: TextStyle(
+                    color: _selectedRoute == 5 ? Colors.white : Colors.black,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
             ],
           ),
-
-          SizedBox(width: 16),
-          ElevatedButton(
-            onPressed: () {
-              setState(() {
-                _selectedRoute = 3;
-                _updateSelectedRoute(3);// Switch to Route 3.
-              });
-            },
-            style: ElevatedButton.styleFrom(
-              primary: _selectedRoute == 3 ? Colors.orange : Colors.white,
-              minimumSize: Size(400, 50),
-              // Set the width and height for a wider button
-              shape: RoundedRectangleBorder( // Adjust the button's shape
-                borderRadius: BorderRadius.circular(
-                    0), // You can change the value to make it less curved
-              ),
-            ),
-            child: Text('Route 3',
-              style: TextStyle(
-                color: _selectedRoute == 3 ? Colors.white : Colors.black,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-
-          SizedBox(width: 16),
-          ElevatedButton(
-            onPressed: () {
-              setState(() {
-                _selectedRoute = 4;
-                _updateSelectedRoute(4);// Switch to Route 4.
-              });
-            },
-            style: ElevatedButton.styleFrom(
-              primary: _selectedRoute == 4 ? Colors.lightBlueAccent : Colors
-                  .white,
-              minimumSize: Size(400, 50),
-              // Set the width and height for a wider button
-              shape: RoundedRectangleBorder( // Adjust the button's shape
-                borderRadius: BorderRadius.circular(
-                    0), // You can change the value to make it less curved
-              ),
-            ),
-            child: Text('Route 4',
-              style: TextStyle(
-                color: _selectedRoute == 4 ? Colors.white : Colors.black,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-
-          SizedBox(width: 16),
-          ElevatedButton(
-            onPressed: () {
-              setState(() {
-                _selectedRoute = 5;
-                _updateSelectedRoute(5);// Switch to Route 4.
-              });
-            },
-            style: ElevatedButton.styleFrom(
-              primary: _selectedRoute == 5 ? Colors.deepPurple : Colors.white,
-              minimumSize: Size(400, 50),
-              // Set the width and height for a wider button
-              shape: RoundedRectangleBorder( // Adjust the button's shape
-                borderRadius: BorderRadius.circular(
-                    0), // You can change the value to make it less curved
-              ),
-            ),
-            child: Text('Route 5',
-              style: TextStyle(
-                color: _selectedRoute == 5 ? Colors.white : Colors.black,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
         ],
-      )
-          : _pages[_currentIndex],
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _currentIndex,
-        onTap: (index) {
-          setState(() {
-            _currentIndex = index;
-          });
-        },
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.location_on),
-            label: 'Bus Stop',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.directions_bus),
-            label: 'Bus Routes',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.navigation),
-            label: 'Navigation',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.star),
-            label: 'Starred',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.message),
-            label: 'Messages',
-          ),
-        ],
-        selectedItemColor: Colors.blueAccent,
-        unselectedItemColor: Colors.black,
       ),
     );
   }
 }
-
-
-
