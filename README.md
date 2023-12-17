@@ -31,9 +31,8 @@ _UPM Bus System_
 _Staffs, Students & Drivers_.
 
 3. Technological Stack:
-_Operating System: iOS_,
+_Operating System: iOS & Android_,
 _Framework: Flutter Dart language_,
-_Real-time Database: Google Firebase API_,
 _Relational Database: MySQL_,
 _Mapping: Google Maps API_,
 _Environment (IDE): Android Studio_.
